@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Jonathan Walker Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Oswald', sans-serif;
+        text-transform: uppercase;
+    }
+
+    img {
+        height: 200px;
+        border-radius: 100%;
+
+    }
+
+    .container {
+        background-color: #19171a;
+        margin-top: -70px;
+        border-bottom: 0.3em solid #ff6600;
+    }
+
+    .Name {
+        -webkit-text-fill-color: #19171a;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ff6600;
+        margin-top: 10px;
+        text-align: center;
+        font: bold 60px Century Gothic, Arial;
+        fill: none;
+    }
+
+    .About {
+        color: #a6a6a6;
+        text-align: center;
+        font-size: 18px;
+        font-weight: 650;
+        margin-top: -10px;
+        font: Century Gothic, Arial;
+
+    }
+
+    .aboutSize {
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 30px;
+    }
+
+
+    div.avatarImg {
+        text-align: center;
+    }
+
+    div.btnLinks {
+        text-align: center;
+        margin-top: 20px;
+
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 50px;
+        font-size: 40px;
+    }
+
+    h5 {
+        text-align: center;
+        font-size: 25px;
+        margin-top: -10px;
+        color: #a6a6a6;
+    }
+
+    .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+    a.button {
+        display: inline-block;
+        padding: 0.35em 1.2em;
+        border: 0.1em solid #ff6600;
+        margin: 0 0.3em 0.3em 0;
+        border-radius: 0.12em;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        color: white;
+        text-align: center;
+        transition: all 0.2s;
+    }
+
+    a.button:hover {
+        color: white;
+        background-color: #ff781f;
+    }
+
+    @media all and (max-width:30em) {
+        a.button {
+            display: block;
+            margin: 0.4em auto;
+        }
+    }
+
+    .grid2x2 {
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .grid2x2>div {
+        display: flex;
+        flex-basis: calc(50% - 40px);
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .grid2x2>div>div {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .box {
+        margin: 20px;
+    }
+
+    .box1 {
+        background-color: white;
+    }
+
+    .box2 {
+        background-color: white;
+    }
+
+    .box3 {
+        background-color: white;
+    }
+
+    .box4 {
+        background-color: white;
+    }
+
+    h3 {
+        font-size: 30px;
+        color: #191919;
+        font-weight: lighter;
+
+    }
+
+    .information {
+        color: #999999;
+    }
+
+
+    .involvementsContainer {
+        margin-top: 160px;
+        background-color: #eee;
+    }
+
+    .aboutinfo {
+        color: #999999;
+    }
+
+    .titless {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    footer {
+        border-top: 0.3em solid #ff6600;
+        background-color: #19171a;
+    }
+
+    .names {
+        color: white;
+        font-size: 13px;
+        align-content: center;
+
+    }
+
+    .contactInformation {
+        background-color: white;
+    }
+
+    .emailPhone {
+        margin-top: -17px;
+    }
+</style>
+
+<body>
+    <!-- main class -->
+    <header class="container" style="padding:70px 16px">
+        <h1 class="Name">Jonathan Walker</h1>
+        <div class="aboutSize">
+            <p class="About">I am a highly ambitious, enthusiastic and motivated computer science student, who thrives
+                on continually trying to improve myself and learn new skills and technologies to produce
+                better software
+                products. </p>
+        </div>
+        <div class="avatarImg">
+            <img src="images.png." alt="Avatar" style="width: 100;">
+        </div>
+        <div class="btnLinks">
+            <a href="linkhere" class="button">Resume</a>
+            <a href="https://github.com/JonnyWalk" class="button">GitHub</a>
+            <a href="https://www.linkedin.com/in/jonw97/" class="button">LinkedIn</a>
+
+        </div>
+    </header>
+    <!-- projects -->
+    <div class="titleContainer">
+        <div class="content">
+            <div class="ProjectTile">
+                <h1>Projects</h1>
+            </div>
+            <div class="bio">
+                <h5>A collection of various developement projects:</h5>
+            </div>
+        </div>
+        <div class="projectContainer">
+            <div class="grid2x2">
+                <div class="box box1">
+                    <div>
+                        <h3>Beacon</h3>
+
+                    </div>
+                    <p class="information">
+                        This was my final year project. A single page application created in React using JavaScript,
+                        Python, Flask, Firebase and Google's Natural Language. The aim was to help students with issues
+                        that may
+                        arrise during their time at University. The project entailed createing a webpage that allowed
+                        users to access and use the system, as well as having a intelligent assistent created in Python
+                        using
+                        machine learning.
+                    </p>
+                </div>
+                <div class="box box2">
+                    <div>
+                        <h3>Cloud Calculator</h3>
+                    </div>
+                    <p class="information">
+                        This involed creating a calculator and hosting on the cloud. This calculator was programmed in
+                        Java, Python, c# and Golang. as part of the requirements were to have it in four different
+                        languages. This
+                        also included Error handling, Dockerfiles, JSON Reponces and Ci pipelines. A custom proxy router
+                        was also created as well as a frontend service failure handler.
+                    </p>
+                </div>
+                <div class="box box3">
+                    <div>
+                        <h3>Cloud Search Engine</h3>
+                    </div>
+                    <p class="information">
+                        This project was to create a search engine, which included implemeting a spider indexer, search
+                        funtion and a database using postgreSQL. Upon getting these to work locally they were then
+                        depoloyed
+                        using CI pipelines to google cloud, these also included DockerFiles, and deployement.yaml. Adds
+                        were also implementsed via a database using key words that are releated to what the user has
+                        searched. This also had
+                        monitoring using grafana.
+                    </p>
+                </div>
+                <div class="box box4">
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Involvements -->
+    <div class="involvementsContainer">
+        <div class="involvedContent">
+            <div class="involvementsContainer">
+                <h1>Involvements</h1>
+            </div>
+            <div class="bio">
+                <h5>Areas that i have been involved within:</h5>
+            </div>
+            <div class="Title">
+                <p class="titless">Peer Mentor</p>
+                <p class="aboutinfo">
+                    In my final year i decided to sign up to become a Peer Mentor in order to help first and second year
+                    students, with areas such as,
+                    understanding pieces of coursework or helping them prepare better for an exam. This entailed sitting
+                    down individually with students or if
+                    a lot of student were having the same issue sit with groups of three or four. While being a peer
+                    mentor it helped myself improve upon the current skills
+                    that i already possess and helped me grasp a further understanding of new programming languages.
+                </p>
+            </div>
+            <div class="Title">
+                <p class="titless">Mental Health Ambassador </p>
+                <p class="aboutinfo">
+                    Queen's University Belfast started the mental health ambassador roles in 2018, in order to try and
+                    improve Menatal Health Within the University.
+                    In order to become an Ambassador a select group of students were chosen and went through 8 weeks of
+                    training to become Mental Health first aid trained. This role
+                    has been throughly enjoyable and has allowed me to be involved in organising and running a lot of
+                    different events such as quiz, games and movie nights as well as a hackathon spoonsored by Microsoft
+                    Dublin.
+                </p>
+            </div>
+            <div class="Title">
+                <p class="titless">Course Rep</p>
+                <p class="aboutinfo">
+                    This role entailed gathering feedback from students in order to find out how they are feeling about
+                    the module, what could be improved and what they are finding difficult, and then organising a
+                    meeting with the Lecturer to
+                    see if the issues that have arrisen can be sorted. If the issue could not be sorted with the
+                    lecturer every two months a meeting was held for the course reps and all staff to see if something
+                    could further be done and allow me to
+                    update the other students on what has been changed.
+                </p>
+            </div>
+        </div>
+        <!-- Contact -->
+        <div class="contactInformation">
+            <div class="contact">
+                <h1>Contact</h1>
+            </div>
+            <div class="email">
+                <p class="emailPhone">Email Address: jwalker33@qub.ac.uk</p>
+                <p class="emailPhone">Phone Number: +44 7858 841286</p>
+            </div>
+            <!-- Footeer -->
+            <footer>
+                <p class="names">© Jonathan Walker 2020</p>
+            </footer>
+
+
+</body>
